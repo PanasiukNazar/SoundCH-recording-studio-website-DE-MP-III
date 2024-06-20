@@ -12,6 +12,10 @@
     opacity: 1;
 }
 
+img {
+    object-fit: cover !important;
+}
+
 /*** Spinner End ***/
 
 .back-to-top {
