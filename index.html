@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>SoundCH</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="" name="keywords" />
+        <meta content="" name="description" />
+
+        <link rel="shortcut icon" href="img/fav.png" type="image/x-icon" />
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Icon Font Stylesheet -->
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Spinner Start -->
+        <div
+            id="spinner"
+            class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center"
+        >
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+        <!-- Navbar Start -->
+        <div class="container-fluid bg-dark">
+            <div class="container">
+                <nav class="navbar navbar-dark navbar-expand-lg py-lg-0">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="text-primary mb-0 display-5">
+                            Sound<span class="text-white">CH</span>
+                        </h1>
+                    </a>
+                    <button
+                        class="navbar-toggler bg-primary"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse"
+                    >
+                        <span class="fa fa-bars text-dark"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse me-n3"
+                        id="navbarCollapse"
+                    >
+                        <div class="navbar-nav ms-auto">
+                            <a
+                                href="index.html"
+                                class="nav-item nav-link active"
+                                >Startseite</a
+                            >
+                            <a href="about.html" class="nav-item nav-link"
+                                >Über uns</a
+                            >
+                            <a href="price.html" class="nav-item nav-link"
+                                >Preise</a
+                            >
+                            <div class="nav-item dropdown">
+                                <a
+                                    href="#"
+                                    class="nav-link dropdown-toggle"
+                                    data-bs-toggle="dropdown"
+                                    >Seiten</a
+                                >
+                                <div class="dropdown-menu m-0 bg-primary">
+                                    <a
+                                        href="work-with-stars.html"
+                                        class="dropdown-item"
+                                        >Arbeit mit Stars</a
+                                    >
+                                    <a
+                                        href="work-on-songs.html"
+                                        class="dropdown-item"
+                                        >Arbeit an Songs</a
+                                    >
+                                    <a
+                                        href="songs-from-scratch.html"
+                                        class="dropdown-item"
+                                        >Songs von Grund auf erstellen</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+        <!-- Carousel Start -->
+        <div class="container-fluid carousel px-0 mb-5 pb-5">
+            <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li
+                        data-bs-target="#carouselId"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="First slide"
+                    ></li>
+                    <li
+                        data-bs-target="#carouselId"
+                        data-bs-slide-to="1"
+                        aria-label="Second slide"
+                    ></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img
+                            src="img/carousel-2.jpg"
+                            class="img-fluid w-100"
+                            alt="First slide"
+                        />
+                        <div class="carousel-caption">
+                            <div class="container carousel-content">
+                                <h4
+                                    class="text-white mb-4 animated slideInDown"
+                                >
+                                    Entdecken Sie ein Tonstudio, das Ihre
+                                    musikalischen Träume Wirklichkeit werden
+                                    lässt.
+                                </h4>
+                                <h1
+                                    class="text-white display-1 mb-4 animated slideInDown"
+                                >
+                                    Willkommen in unserem Tonstudio
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            src="img/carousel-1.jpg"
+                            class="img-fluid w-100"
+                            alt="Second slide"
+                        />
+                        <div class="carousel-caption">
+                            <div class="container carousel-content">
+                                <h4
+                                    class="text-white mb-4 animated slideInDown"
+                                >
+                                    Unser Tonstudio in der Schweiz ist der
+                                    ideale Ort für professionelle
+                                    Audioaufnahmen.
+                                </h4>
+                                <h1
+                                    class="text-white display-1 mb-4 animated slideInDown"
+                                >
+                                    Professionelle Audioaufnahmen
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev btn btn-primary border border-2 border-start-0 border-primary"
+                    type="button"
+                    data-bs-target="#carouselId"
+                    data-bs-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next btn btn-primary border border-2 border-end-0 border-primary"
+                    type="button"
+                    data-bs-target="#carouselId"
+                    data-bs-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- Get In Touch Start -->
+        <div class="container-fluid py-5 wow fadeInUp" data-wow-delay=".3s">
+            <div class="container py-5">
+                <div class="bg-light px-4 py-5 rounded">
+                    <div class="text-center">
+                        <h1 class="display-5 mb-5">
+                            Urheberrecht und Gewinnabzug bei Songs
+                        </h1>
+                        <p>
+                            In unserem Tonstudio in der Schweiz legen wir großen
+                            Wert auf die Einhaltung und den Schutz des
+                            Urheberrechts. Als Musiker und Künstler sind Sie der
+                            Schöpfer Ihrer Werke, und wir verstehen die
+                            Bedeutung des geistigen Eigentums. Unser Studio
+                            bietet Ihnen nicht nur die besten technischen
+                            Voraussetzungen für Ihre Aufnahmen, sondern auch
+                            umfassende Unterstützung bei rechtlichen Fragen rund
+                            um das Urheberrecht und den Gewinnabzug.
+
+                            <strong> Schutz Ihres geistigen Eigentums: </strong>
+
+                            Sobald Sie einen Song in unserem Studio aufnehmen,
+                            bleibt das Urheberrecht an Ihrem Werk
+                            selbstverständlich bei Ihnen. Wir unterstützen Sie
+                            dabei, Ihre Rechte zu schützen und sicherzustellen,
+                            dass Ihr geistiges Eigentum angemessen anerkannt und
+                            vergütet wird. Unser Team berät Sie gerne zu Fragen
+                            der Rechteverwaltung und zeigt Ihnen, wie Sie Ihre
+                            Werke registrieren und schützen können.
+
+                            <strong>
+                                Vertragsvereinbarungen und Gewinnabzug:
+                            </strong>
+                            Um Missverständnisse zu vermeiden und eine klare
+                            Grundlage für die Zusammenarbeit zu schaffen,
+                            erstellen wir gemeinsam mit Ihnen transparente
+                            Vertragsvereinbarungen. Diese beinhalten unter
+                            anderem Regelungen zum Gewinnabzug. In der
+                            Musikindustrie ist es üblich, dass ein bestimmter
+                            Prozentsatz der Gewinne aus der Verwertung von Songs
+                            an das Tonstudio oder an andere beteiligte Parteien
+                            geht. Dieser Prozentsatz wird individuell festgelegt
+                            und hängt von verschiedenen Faktoren wie der Art der
+                            Leistung, dem Umfang der Produktion und den
+                            spezifischen Vereinbarungen ab.
+                            <strong>
+                                Faire und transparente Abrechnung:
+                            </strong>
+                            Unser Ziel ist es, Ihnen eine faire und transparente
+                            Abrechnung zu garantieren. Wir stellen sicher, dass
+                            alle Einnahmen aus der Verwertung Ihrer Songs
+                            korrekt erfasst und Ihnen entsprechend
+                            gutgeschrieben werden. Dank moderner Technologien
+                            und bewährter Abrechnungsmethoden können Sie
+                            jederzeit Einblick in die finanziellen Aspekte Ihrer
+                            Musikprojekte nehmen.
+                            <strong>
+                                Unterstützung bei der Vermarktung:
+                            </strong>
+                            Neben der Aufnahme und Produktion Ihrer Musik bieten
+                            wir Ihnen auch Unterstützung bei der Vermarktung
+                            Ihrer Werke. Von der Veröffentlichung über
+                            Streaming-Plattformen bis hin zu
+                            Vertriebspartnerschaften – wir helfen Ihnen dabei,
+                            Ihre Musik einem breiten Publikum zugänglich zu
+                            machen und gleichzeitig Ihre Rechte zu wahren.
+                            <strong> Fazit: </strong>
+                            Unser Tonstudio in der Schweiz steht für höchste
+                            Qualität und Professionalität in allen Bereichen der
+                            Musikproduktion. Der Schutz Ihres geistigen
+                            Eigentums und eine faire Vergütung Ihrer kreativen
+                            Arbeit sind uns dabei besonders wichtig.
+                            Kontaktieren Sie uns, um mehr über unsere
+                            Dienstleistungen im Bereich Urheberrecht und
+                            Gewinnabzug zu erfahren und lassen Sie uns gemeinsam
+                            Ihre musikalischen Visionen verwirklichen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Get In Touch End -->
+
+        <!-- Services Start -->
+        <div class="container-fluid services py-5">
+            <div class="container text-center py-5">
+                <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
+                    <h5
+                        class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary"
+                    >
+                        Unsere Dienstleistungen
+                    </h5>
+                    <h1 class="display-5">
+                        Vielfältige Möglichkeiten für Ihre Musik
+                    </h1>
+                    <p>
+                        In unserem hochmodernen Tonstudio in der Schweiz bieten
+                        wir Ihnen eine breite Palette an Dienstleistungen, um
+                        Ihre musikalischen Projekte zum Leben zu erwecken. Von
+                        der Aufnahme über die Produktion bis hin zur
+                        Nachbearbeitung – unser erfahrenes Team steht Ihnen bei
+                        jedem Schritt zur Seite. Mit modernster Technik und
+                        einer kreativen Umgebung schaffen wir die perfekten
+                        Voraussetzungen für Ihre Musik. Entdecken Sie unsere
+                        vielfältigen Dienstleistungen und lassen Sie uns
+                        gemeinsam Ihre musikalischen Visionen verwirklichen.
+                    </p>
+                </div>
+                <div class="row g-5">
+                    <div
+                        class="col-xxl-6 col-lg-6 col-md-6 col-sm-12 wow fadeInUp"
+                        data-wow-delay=".3s"
+                    >
+                        <div class="bg-light rounded p-5 services-item">
+                            <div
+                                class="d-flex"
+                                style="
+                                    align-items: center;
+                                    justify-content: center;
+                                "
+                            >
+                                <div
+                                    class="mb-4 rounded-circle services-inner-icon"
+                                >
+                                    <i
+                                        class="fa fa-solid fa-camera-retro fa-3x text-primary"
+                                    ></i>
+                                </div>
+                            </div>
+                            <h4>Aufnahme</h4>
+                            <p class="fs-5">
+                                Unsere hochmodernen Aufnahmeräume bieten die
+                                ideale Umgebung für die Aufnahme Ihrer Musik.
+                                Mit professioneller Ausstattung und akustisch
+                                optimierten Räumen sorgen wir für beste
+                                Klangqualität. Egal ob Gesang, Instrumente oder
+                                ganze Bands – wir bieten maßgeschneiderte
+                                Lösungen für jede Art von Aufnahme.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-xxl-6 col-lg-6 col-md-6 col-sm-12 wow fadeInUp"
+                        data-wow-delay=".5s"
+                    >
+                        <div class="bg-light rounded p-5 services-item">
+                            <div
+                                class="d-flex"
+                                style="
+                                    align-items: center;
+                                    justify-content: center;
+                                "
+                            >
+                                <div
+                                    class="mb-4 rounded-circle services-inner-icon"
+                                >
+                                    <i
+                                        class="fa fa-solid fa-icons fa-3x text-primary"
+                                    ></i>
+                                </div>
+                            </div>
+                            <h4 class="text-center">Musikproduktion</h4>
+                            <p class="text-center fs-5">
+                                Von der ersten Idee bis zum fertigen Song
+                                begleiten wir Sie durch den gesamten
+                                Produktionsprozess. Unser erfahrenes Team aus
+                                Produzenten und Tontechnikern hilft Ihnen, Ihre
+                                musikalischen Visionen umzusetzen und das Beste
+                                aus Ihrem Material herauszuholen. Kreativität
+                                und technische Perfektion stehen dabei im
+                                Mittelpunkt.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-xxl-6 col-lg-6 col-md-6 col-sm-12 wow fadeInUp"
+                        data-wow-delay=".7s"
+                    >
+                        <div class="bg-light rounded p-5 services-item">
+                            <div
+                                class="d-flex"
+                                style="
+                                    align-items: center;
+                                    justify-content: center;
+                                "
+                            >
+                                <div
+                                    class="mb-4 rounded-circle services-inner-icon"
+                                >
+                                    <i
+                                        class="fa fa-solid fa-image fa-3x text-primary"
+                                    ></i>
+                                </div>
+                            </div>
+                            <h4 class="text-center">Mixing und Mastering</h4>
+                            <p class="text-center fs-5">
+                                Der letzte Schliff für Ihre Aufnahmen – unser
+                                Mixing und Mastering Service sorgt dafür, dass
+                                Ihr Song perfekt klingt. Mit modernster Software
+                                und erfahrenen Toningenieuren bringen wir Ihre
+                                Musik auf ein professionelles Niveau, das sich
+                                hören lassen kann. Klare Höhen, satte Bässe und
+                                ein ausgewogener Sound – wir machen es möglich.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-xxl-6 col-lg-6 col-md-6 col-sm-12 wow fadeInUp"
+                        data-wow-delay=".9s"
+                    >
+                        <div class="bg-light rounded p-5 services-item">
+                            <div
+                                class="d-flex"
+                                style="
+                                    align-items: center;
+                                    justify-content: center;
+                                "
+                            >
+                                <div
+                                    class="mb-4 rounded-circle services-inner-icon"
+                                >
+                                    <i
+                                        class="fa fa-solid fa-user fa-3x text-primary"
+                                    ></i>
+                                </div>
+                            </div>
+                            <h4 class="text-center">Postproduktion</h4>
+                            <p class="text-center fs-5">
+                                Die Nachbearbeitung Ihrer Musik ist ein
+                                entscheidender Schritt, um das endgültige
+                                Klangbild zu perfektionieren. Wir bieten
+                                umfassende Postproduktions-Dienstleistungen,
+                                darunter Editing, Sounddesign und Effekte. Unser
+                                Ziel ist es, Ihre Musik in ihrer besten Form zu
+                                präsentieren und ihr den letzten Feinschliff zu
+                                verleihen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services End -->
+
+        <!-- Call To Action Start -->
+        <div
+            class="container-fluid py-5 call-to-action wow fadeInUp"
+            data-wow-delay=".3s"
+            style="margin: 6rem 0"
+        >
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-12 my-auto text-center">
+                        <h1 class="pb-4 text-white">Unvergleichlicher Sound</h1>
+                        <p class="text-white">
+                            In unserem Tonstudio bieten wir Ihnen eine
+                            herausragende Umgebung, um Ihre musikalischen
+                            Visionen zum Leben zu erwecken. Unser erfahrenes
+                            Team von Tontechnikern und Musikproduzenten steht
+                            Ihnen zur Seite, um Ihre kreativen Ideen in
+                            professionellen Sound umzusetzen. Mit modernster
+                            Technik und einer Leidenschaft für Musik garantieren
+                            wir Ihnen Aufnahmen in höchster Qualität. Unser
+                            Studio ist mit erstklassiger Ausstattung
+                            ausgestattet, um jede Nuance Ihres Sounds perfekt
+                            einzufangen und zu optimieren. Ganz gleich, ob Sie
+                            ein Solo-Künstler, eine Band oder ein aufstrebender
+                            Musikproduzent sind – wir bieten Ihnen die besten
+                            Voraussetzungen, um Ihre musikalischen Projekte
+                            erfolgreich umzusetzen. Treten Sie ein und erleben
+                            Sie den unvergleichlichen Sound, den nur unser
+                            Studio bieten kann.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Call To Action End -->
+
+        <!-- Blog Start -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
+                    <h5
+                        class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary"
+                    >
+                        Unser letzter Blog
+                    </h5>
+                    <h1 class="display-5">
+                        Aktuelle Neuigkeiten und Einblicke aus der Welt der
+                        Musikproduktion
+                    </h1>
+                    <p>
+                        In unserem Blog teilen wir regelmäßig spannende
+                        Neuigkeiten, hilfreiche Tipps und inspirierende
+                        Geschichten aus der Welt der Musikproduktion. Ob Sie ein
+                        erfahrener Musiker oder ein aufstrebender Künstler sind,
+                        unser Blog bietet Ihnen wertvolle Einblicke und
+                        Informationen, die Ihnen helfen, Ihre musikalischen
+                        Projekte voranzutreiben. Bleiben Sie auf dem Laufenden
+                        über die neuesten Trends, Technologien und Entwicklungen
+                        in der Branche und lassen Sie sich von unseren Experten
+                        inspirieren.
+                    </p>
+                </div>
+                <div class="container">
+                    <div class="row" style="row-gap: 30px">
+                        <div class="blog-item col-md-6 col-sm-12">
+                            <img
+                                src="img/blog-1.jpg"
+                                class="img-fluid w-100 rounded-top"
+                                alt=""
+                            />
+                            <div class="rounded-bottom bg-light">
+                                <div
+                                    class="d-flex justify-content-between p-4 pb-2"
+                                >
+                                    <span class="text-dark"
+                                        ><i class="fas fa-calendar-alt me-2"></i
+                                        >10 Feb, 2023</span
+                                    >
+                                </div>
+                                <div class="px-4 pb-3">
+                                    <h4>
+                                        Die Kunst des Mixings: Tipps und Tricks
+                                        vom Profi
+                                    </h4>
+                                    <p>
+                                        In diesem Beitrag geben unsere
+                                        Tontechniker wertvolle Tipps und Tricks
+                                        für das perfekte Mixing. Erfahren Sie,
+                                        wie Sie Ihren Sound optimieren und Ihre
+                                        Musik auf das nächste Level bringen
+                                        können.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-item col-md-6 col-sm-12">
+                            <img
+                                src="img/blog-2.jpg"
+                                class="img-fluid w-100 rounded-top"
+                                alt=""
+                            />
+                            <div class="rounded-bottom bg-light">
+                                <div
+                                    class="d-flex justify-content-between p-4 pb-2"
+                                >
+                                    <span class="text-dark"
+                                        ><i class="fas fa-calendar-alt me-2"></i
+                                        >01 Mai, 2023</span
+                                    >
+                                </div>
+                                <div class="px-4 pb-3">
+                                    <h4>
+                                        Moderne Aufnahmetechniken: So holen Sie
+                                        das Beste aus Ihrem Studio-Setup heraus
+                                    </h4>
+                                    <p>
+                                        Entdecken Sie die neuesten
+                                        Aufnahmetechniken und erfahren Sie, wie
+                                        Sie Ihr Studio-Setup optimal nutzen
+                                        können. Von Mikrofonierung bis hin zur
+                                        Raumakustik – hier finden Sie alles, was
+                                        Sie wissen müssen.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-item col-md-6 col-sm-12">
+                            <img
+                                src="img/blog-3.jpg"
+                                class="img-fluid w-100 rounded-top"
+                                alt=""
+                            />
+                            <div class="rounded-bottom bg-light">
+                                <div
+                                    class="d-flex justify-content-between p-4 pb-2"
+                                >
+                                    <span class="text-dark"
+                                        ><i class="fas fa-calendar-alt me-2"></i
+                                        >17 Jan, 2022</span
+                                    >
+                                </div>
+                                <div class="px-4 pb-3">
+                                    <h4>
+                                        Erfolgreiches Songwriting: Inspiration
+                                        und Techniken für Ihren nächsten Hit
+                                    </h4>
+                                    <p>
+                                        Lassen Sie sich inspirieren und erfahren
+                                        Sie mehr über erfolgreiche
+                                        Songwriting-Techniken. Unsere Experten
+                                        teilen ihre besten Tipps, um Ihre
+                                        Kreativität zu fördern und erfolgreiche
+                                        Songs zu schreiben.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-item col-md-6 col-sm-12">
+                            <img
+                                src="img/blog-4.jpg"
+                                class="img-fluid w-100 rounded-top"
+                                alt=""
+                            />
+                            <div class="rounded-bottom bg-light">
+                                <div
+                                    class="d-flex justify-content-between p-4 pb-2"
+                                >
+                                    <span class="text-dark"
+                                        ><i class="fas fa-calendar-alt me-2"></i
+                                        >22 Sep, 2021</span
+                                    >
+                                </div>
+                                <div class="px-4 pb-3">
+                                    <h4>
+                                        Die Zukunft der Musikproduktion: Trends
+                                        und Technologien, die Sie kennen sollten
+                                    </h4>
+                                    <p>
+                                        Bleiben Sie am Puls der Zeit und
+                                        entdecken Sie die neuesten Trends und
+                                        Technologien in der Musikproduktion.
+                                        Erfahren Sie, wie Sie diese
+                                        Entwicklungen zu Ihrem Vorteil nutzen
+                                        können und was die Zukunft für die
+                                        Musikindustrie bereithält.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+
+        <!-- Contact Start -->
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
+                    <h5
+                        class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary"
+                    >
+                        Kontakt aufnehmen
+                    </h5>
+                    <h1 class="display-5 w-50 mx-auto">
+                        Kontakt für jede Anfrage
+                    </h1>
+                </div>
+                <div class="row g-5 mb-5">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="h-100">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2699.6555271891148!2d9.348386496623323!3d47.418659826613975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b1fd26246038d%3A0x9f158a4cc817d96!2sRecording%20Studio%20QFLM%20GmbH!5e0!3m2!1suk!2sua!4v1718899147913!5m2!1suk!2sua"
+                                class="border-0 rounded w-100 h-100"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="rounded contact-form">
+                            <div class="mb-4">
+                                <input
+                                    type="text"
+                                    class="form-control p-3"
+                                    placeholder="Ihr Name"
+                                />
+                            </div>
+                            <div class="mb-4">
+                                <input
+                                    type="email"
+                                    class="form-control p-3"
+                                    placeholder="Ihre E-Mail-Adresse"
+                                    id="email"
+                                />
+                                <div id="result" style="color: red"></div>
+                            </div>
+                            <div class="mb-4">
+                                <input
+                                    type="text"
+                                    class="form-control p-3"
+                                    placeholder="Betreff"
+                                />
+                            </div>
+                            <div class="mb-4">
+                                <textarea
+                                    class="w-100 form-control p-3"
+                                    rows="6"
+                                    cols="10"
+                                    placeholder="Nachricht"
+                                ></textarea>
+                            </div>
+                            <button
+                                class="btn btn-primary border-0 py-3 px-4 rounded-pill"
+                                type="button"
+                                id="submit"
+                                onclick="sendForm()"
+                            >
+                                Nachricht senden
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-4 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12">
+                        <div
+                            class="d-flex bg-light p-3 rounded contact-btn-link"
+                        >
+                            <div
+                                class="d-flex align-items-center justify-content-center bg-primary rounded-circle p-3 ms-3"
+                                style="width: 64px; height: 64px"
+                            >
+                                <i class="fas fa-map-marker-alt text-dark"></i>
+                            </div>
+                            <div class="ms-3 contact-link">
+                                <h4 class="text-dark">Adresse</h4>
+                                <a href="#">
+                                    <h5 class="text-dark d-inline fs-6">
+                                        Zürcherstrasse 45, 9000 St. Gallen,
+                                        Switzerland
+                                    </h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12">
+                        <div
+                            class="d-flex bg-light p-3 rounded contact-btn-link"
+                        >
+                            <div
+                                class="d-flex align-items-center justify-content-center bg-primary rounded-circle p-3 ms-3"
+                                style="width: 64px; height: 64px"
+                            >
+                                <i class="fa fa-phone text-dark"></i>
+                            </div>
+                            <div class="ms-3 contact-link">
+                                <h4 class="text-dark">Rufen Sie uns an</h4>
+                                <a
+                                    class="h5 text-dark fs-6"
+                                    href="tel:+0123456789"
+                                    >+41712246920</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12">
+                        <div
+                            class="d-flex bg-light p-3 rounded contact-btn-link"
+                        >
+                            <div
+                                class="d-flex align-items-center justify-content-center bg-primary rounded-circle p-3 ms-3"
+                                style="width: 64px; height: 64px"
+                            >
+                                <i class="fa fa-envelope text-dark"></i>
+                            </div>
+                            <div class="ms-3 contact-link">
+                                <h4 class="text-dark">E-Mail</h4>
+                                <a class="h5 text-dark fs-6" href="#"
+                                    >sound_CH@gmail.com</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+        <!-- Footer Start -->
+        <div
+            class="container-fluid footer py-5 wow fadeIn"
+            data-wow-delay=".3s"
+        >
+            <div class="container py-5">
+                <div class="row g-4 footer-inner">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-white fw-bold mb-4">SoundCH</h4>
+                            <p>
+                                Herzlich willkommen auf unserer Website, dem
+                                Zuhause für erstklassige Musikproduktionen in
+                                der Schweiz. In unserem Footer-Bereich finden
+                                Sie alle wichtigen Informationen und Links, um
+                                Ihnen die Navigation auf unserer Website zu
+                                erleichtern. Hier können Sie schnell auf unsere
+                                Kontaktdaten zugreifen, um uns direkt zu
+                                erreichen.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-white fw-bold mb-4">
+                                Nützlicher Link
+                            </h4>
+                            <div class="d-flex flex-column align-items-start">
+                                <a class="btn btn-link ps-0" href="index.html"
+                                    ><i class="fa fa-check me-2"></i
+                                    >Startseite</a
+                                >
+                                <a class="btn btn-link ps-0" href="about.html"
+                                    ><i class="fa fa-check me-2"></i>Über uns</a
+                                >
+                                <a
+                                    class="btn btn-link ps-0"
+                                    href="privacy-policy.html"
+                                    ><i class="fa fa-check me-2"></i
+                                    >Datenschutz</a
+                                >
+                                <a
+                                    class="btn btn-link ps-0"
+                                    href="terms-of-use.html"
+                                    ><i class="fa fa-check me-2"></i>Begriffe</a
+                                >
+                                <a
+                                    class="btn btn-link ps-0"
+                                    href="bussines-model.html"
+                                    ><i class="fa fa-check me-2"></i
+                                    >Business-Modell</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-white fw-bold mb-4">Kontakt</h4>
+                            <a
+                                href=""
+                                class="btn btn-link w-100 text-start ps-0 pb-3 border-bottom rounded-0"
+                                ><i class="fa fa-map-marker-alt me-3"></i
+                                >Zürcherstrasse 45, 9000 St. Gallen,
+                                Switzerland</a
+                            >
+                            <a
+                                href=""
+                                class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"
+                                ><i class="fa fa-phone-alt me-3"></i
+                                >+41712246920</a
+                            >
+                            <a
+                                href=""
+                                class="btn btn-link w-100 text-start ps-0 py-3 border-bottom rounded-0"
+                                ><i class="fa fa-envelope me-3"></i
+                                >sound_CH@gmail.com</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="col-md-12 my-auto text-center text-md-end text-white"
+                    >
+                        <p class="text-center">
+                            Haftungsausschluss: Die Informationen auf dieser
+                            Website sind nicht als Rechtsberatung gedacht und
+                            begründen kein Mandatsverhältnis. Die hier zur
+                            Verfügung gestellten Informationen, Dokumente oder
+                            Formulare dienen nur allgemeinen Informationszwecken
+                            und sollten nicht als Rechtsberatung angesehen
+                            werden. Die Gesetze ändern sich regelmäßig; daher
+                            kann es sein, dass die Informationen auf dieser
+                            Website nicht korrekt sind. Es ist unbedingt
+                            erforderlich, dass Sie sich rechtlich beraten
+                            lassen, um Ihre Rechte und Pflichten nach geltendem
+                            Recht und unter Berücksichtigung Ihrer besonderen
+                            Umstände zu bestimmen.olorlib can't be removed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary rounded-circle border-3 back-to-top"
+            ><i class="fa fa-arrow-up"></i
+        ></a>
+
+        <!-- Cookie banner -->
+        <div class="cookie-wrapper show">
+            <div>
+                <i class="bx bx-cookie"></i>
+                <h2 style="text-align: center">Cookie-Zustimmung</h2>
+            </div>
+
+            <div class="data">
+                <p>
+                    Diese Website verwendet Cookies, um Ihnen ein besseres und
+                    besseres und relevanteres Surferlebnis auf der Website zu
+                    ermöglichen.
+                    <a href="#">Mehr erfahren...</a>
+                </p>
+            </div>
+
+            <div class="buttons">
+                <button class="cookie-button" id="acceptBtn">
+                    Akzeptieren
+                </button>
+                <button class="cookie-button" id="declineBtn">Rückgang</button>
+            </div>
+        </div>
+        <!-- End Cookie banner -->
+
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/cookiebanner.js"></script>
+        <script src="js/contact-form.js"></script>
+    </body>
+</html>
